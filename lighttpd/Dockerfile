@@ -6,8 +6,9 @@
 FROM ubuntu:12.04
 MAINTAINER benr@cuddletech.com
 
-RUN "apt-get update"
-RUN "apt-get install -y lighttpd"
+## Each argument of RUN needs to be parsed, do not include in "quotes"
+RUN /usr/bin/apt-get update
+RUN /usr/bin/apt-get install -y lighttpd
 
 # ADD <src> <dest>	Copy or extract a URL, TAR, or local directory into the container
 # COPY <src> <dest>	Simpler and faster, use when just copying files
@@ -20,5 +21,6 @@ EXPOSE 80
 ##   Use them together to create an entrypoint with default arguments that can be overriden 
 
 ENTRYPOINT ["/usr/sbin/lighttpd","-f","/etc/lighttpd/lighttpd.conf"]
-
 # Pass -D to foreground!
+CMD ["-D"]
+
