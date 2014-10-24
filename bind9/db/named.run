@@ -1,0 +1,874 @@
+24-Oct-2014 08:08:49.637 starting BIND 9.9.5-3-Ubuntu -f -d 999
+24-Oct-2014 08:08:49.637 built with '--prefix=/usr' '--mandir=/usr/share/man' '--infodir=/usr/share/info' '--sysconfdir=/etc/bind' '--localstatedir=/var' '--enable-threads' '--enable-largefile' '--with-libtool' '--enable-shared' '--enable-static' '--with-openssl=/usr' '--with-gssapi=/usr' '--with-gnu-ld' '--with-geoip=/usr' '--with-atf=no' '--enable-ipv6' '--enable-rrl' '--enable-filter-aaaa' 'CFLAGS=-fno-strict-aliasing -DDIG_SIGCHASE -O2'
+24-Oct-2014 08:08:49.637 ----------------------------------------------------
+24-Oct-2014 08:08:49.637 BIND 9 is maintained by Internet Systems Consortium,
+24-Oct-2014 08:08:49.637 Inc. (ISC), a non-profit 501(c)(3) public-benefit 
+24-Oct-2014 08:08:49.637 corporation.  Support and training for BIND 9 are 
+24-Oct-2014 08:08:49.637 available at https://www.isc.org/support
+24-Oct-2014 08:08:49.637 ----------------------------------------------------
+24-Oct-2014 08:08:49.637 found 4 CPUs, using 4 worker threads
+24-Oct-2014 08:08:49.637 using 4 UDP listeners per interface
+24-Oct-2014 08:08:49.638 using up to 4096 sockets
+24-Oct-2014 08:08:49.638 Registering DLZ_dlopen driver
+24-Oct-2014 08:08:49.638 Registering SDLZ driver 'dlopen'
+24-Oct-2014 08:08:49.638 Registering DLZ driver 'dlopen'
+24-Oct-2014 08:08:49.638 decrement_reference: delete from rbt: 0x7f2da26f4068 .
+24-Oct-2014 08:08:49.640 loading configuration from '/etc/bind/named.conf'
+24-Oct-2014 08:08:49.640 reading built-in trusted keys from file '/etc/bind/bind.keys'
+24-Oct-2014 08:08:49.641 set maximum stack size to 18446744073709551615: success
+24-Oct-2014 08:08:49.641 set maximum data size to 18446744073709551615: success
+24-Oct-2014 08:08:49.641 set maximum core size to 18446744073709551615: success
+24-Oct-2014 08:08:49.641 set maximum open files to 18446744073709551615: success
+24-Oct-2014 08:08:49.641 using default UDP/IPv4 port range: [1024, 65535]
+24-Oct-2014 08:08:49.641 using default UDP/IPv6 port range: [1024, 65535]
+24-Oct-2014 08:08:49.642 listening on IPv6 interfaces, port 53
+24-Oct-2014 08:08:49.642 clientmgr @0x7f2da2717010: create
+24-Oct-2014 08:08:49.643 socket 0x7f2da267e010: created
+24-Oct-2014 08:08:49.643 socket 0x7f2da267e010 ::#53: bound
+24-Oct-2014 08:08:49.643 dispatchmgr 0x7f2da26ec310: dns_dispatch_createudp: Created UDP dispatch for ::#53 with socket fd 512
+
+24-Oct-2014 08:08:49.643 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940e76e0
+24-Oct-2014 08:08:49.643 dispatch 0x7f2d940e76e0: created task 0x7f2da26fa250
+24-Oct-2014 08:08:49.643 dispatch 0x7f2d940e76e0: created socket 0x7f2da267e010
+24-Oct-2014 08:08:49.643 socket 0x7f2da267e260: dupped
+24-Oct-2014 08:08:49.643 dispatchmgr 0x7f2da26ec310: dns_dispatch_createudp: Created UDP dispatch for ::#53 with socket fd 513
+
+24-Oct-2014 08:08:49.643 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940e70c0
+24-Oct-2014 08:08:49.643 dispatch 0x7f2d940e70c0: created task 0x7f2da26fa310
+24-Oct-2014 08:08:49.643 dispatch 0x7f2d940e70c0: created socket 0x7f2da267e260
+24-Oct-2014 08:08:49.643 socket 0x7f2da267e4b0: dupped
+24-Oct-2014 08:08:49.643 dispatchmgr 0x7f2da26ec310: dns_dispatch_createudp: Created UDP dispatch for ::#53 with socket fd 514
+
+24-Oct-2014 08:08:49.643 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940e6aa0
+24-Oct-2014 08:08:49.643 dispatch 0x7f2d940e6aa0: created task 0x7f2da26fa3d0
+24-Oct-2014 08:08:49.643 dispatch 0x7f2d940e6aa0: created socket 0x7f2da267e4b0
+24-Oct-2014 08:08:49.643 socket 0x7f2da267e700: dupped
+24-Oct-2014 08:08:49.643 dispatchmgr 0x7f2da26ec310: dns_dispatch_createudp: Created UDP dispatch for ::#53 with socket fd 515
+
+24-Oct-2014 08:08:49.643 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940e6480
+24-Oct-2014 08:08:49.643 dispatch 0x7f2d940e6480: created task 0x7f2da26fa490
+24-Oct-2014 08:08:49.643 dispatch 0x7f2d940e6480: created socket 0x7f2da267e700
+24-Oct-2014 08:08:49.643 clientmgr @0x7f2da2717010: createclients
+24-Oct-2014 08:08:49.643 clientmgr @0x7f2da2717010: get client
+24-Oct-2014 08:08:49.643 clientmgr @0x7f2da2717010: create new
+24-Oct-2014 08:08:49.643 clientmgr @0x7f2da2717010: clientmctx
+24-Oct-2014 08:08:49.643 client @0x7f2d940f2920: create
+24-Oct-2014 08:08:49.643 clientmgr @0x7f2da2717010: get client
+24-Oct-2014 08:08:49.643 clientmgr @0x7f2da2717010: create new
+24-Oct-2014 08:08:49.643 clientmgr @0x7f2da2717010: clientmctx
+24-Oct-2014 08:08:49.644 client @0x7f2d94100b60: create
+24-Oct-2014 08:08:49.644 clientmgr @0x7f2da2717010: get client
+24-Oct-2014 08:08:49.644 clientmgr @0x7f2da2717010: create new
+24-Oct-2014 08:08:49.644 clientmgr @0x7f2da2717010: clientmctx
+24-Oct-2014 08:08:49.644 client @0x7f2d9410eda0: create
+24-Oct-2014 08:08:49.644 clientmgr @0x7f2da2717010: get client
+24-Oct-2014 08:08:49.644 clientmgr @0x7f2da2717010: create new
+24-Oct-2014 08:08:49.644 clientmgr @0x7f2da2717010: clientmctx
+24-Oct-2014 08:08:49.644 client @0x7f2d9411cfe0: create
+24-Oct-2014 08:08:49.644 socket 0x7f2da267e950: created
+24-Oct-2014 08:08:49.644 socket 0x7f2da267e950 ::#53: bound
+24-Oct-2014 08:08:49.644 clientmgr @0x7f2da2717010: createclients
+24-Oct-2014 08:08:49.644 clientmgr @0x7f2da2717010: get client
+24-Oct-2014 08:08:49.644 clientmgr @0x7f2da2717010: create new
+24-Oct-2014 08:08:49.644 clientmgr @0x7f2da2717010: clientmctx
+24-Oct-2014 08:08:49.644 client @0x7f2d9412b390: create
+24-Oct-2014 08:08:49.645 listening on IPv4 interface lo, 127.0.0.1#53
+24-Oct-2014 08:08:49.645 clientmgr @0x7f2da2717458: create
+24-Oct-2014 08:08:49.645 socket 0x7f2da267eba0: created
+24-Oct-2014 08:08:49.645 socket 0x7f2da267eba0 127.0.0.1#53: bound
+24-Oct-2014 08:08:49.645 dispatchmgr 0x7f2da26ec310: dns_dispatch_createudp: Created UDP dispatch for 127.0.0.1#53 with socket fd 516
+
+24-Oct-2014 08:08:49.645 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940e5e60
+24-Oct-2014 08:08:49.645 dispatch 0x7f2d940e5e60: created task 0x7f2da26fa910
+24-Oct-2014 08:08:49.645 dispatch 0x7f2d940e5e60: created socket 0x7f2da267eba0
+24-Oct-2014 08:08:49.645 socket 0x7f2da2680010: dupped
+24-Oct-2014 08:08:49.645 dispatchmgr 0x7f2da26ec310: dns_dispatch_createudp: Created UDP dispatch for 127.0.0.1#53 with socket fd 517
+
+24-Oct-2014 08:08:49.645 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940e5840
+24-Oct-2014 08:08:49.645 dispatch 0x7f2d940e5840: created task 0x7f2da26fa9d0
+24-Oct-2014 08:08:49.645 dispatch 0x7f2d940e5840: created socket 0x7f2da2680010
+24-Oct-2014 08:08:49.645 socket 0x7f2da2680260: dupped
+24-Oct-2014 08:08:49.645 dispatchmgr 0x7f2da26ec310: dns_dispatch_createudp: Created UDP dispatch for 127.0.0.1#53 with socket fd 518
+
+24-Oct-2014 08:08:49.645 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940e5220
+24-Oct-2014 08:08:49.645 dispatch 0x7f2d940e5220: created task 0x7f2da26faa90
+24-Oct-2014 08:08:49.645 dispatch 0x7f2d940e5220: created socket 0x7f2da2680260
+24-Oct-2014 08:08:49.645 socket 0x7f2da26804b0: dupped
+24-Oct-2014 08:08:49.645 dispatchmgr 0x7f2da26ec310: dns_dispatch_createudp: Created UDP dispatch for 127.0.0.1#53 with socket fd 519
+
+24-Oct-2014 08:08:49.645 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940e4c00
+24-Oct-2014 08:08:49.645 dispatch 0x7f2d940e4c00: created task 0x7f2da26fab50
+24-Oct-2014 08:08:49.645 dispatch 0x7f2d940e4c00: created socket 0x7f2da26804b0
+24-Oct-2014 08:08:49.645 clientmgr @0x7f2da2717458: createclients
+24-Oct-2014 08:08:49.645 clientmgr @0x7f2da2717458: get client
+24-Oct-2014 08:08:49.645 clientmgr @0x7f2da2717458: create new
+24-Oct-2014 08:08:49.645 clientmgr @0x7f2da2717458: clientmctx
+24-Oct-2014 08:08:49.645 client @0x7f2d9413a6e0: create
+24-Oct-2014 08:08:49.645 clientmgr @0x7f2da2717458: get client
+24-Oct-2014 08:08:49.645 clientmgr @0x7f2da2717458: create new
+24-Oct-2014 08:08:49.645 clientmgr @0x7f2da2717458: clientmctx
+24-Oct-2014 08:08:49.646 client @0x7f2d94148920: create
+24-Oct-2014 08:08:49.646 clientmgr @0x7f2da2717458: get client
+24-Oct-2014 08:08:49.646 clientmgr @0x7f2da2717458: create new
+24-Oct-2014 08:08:49.646 clientmgr @0x7f2da2717458: clientmctx
+24-Oct-2014 08:08:49.646 client @0x7f2d94156b60: create
+24-Oct-2014 08:08:49.646 clientmgr @0x7f2da2717458: get client
+24-Oct-2014 08:08:49.646 clientmgr @0x7f2da2717458: create new
+24-Oct-2014 08:08:49.646 clientmgr @0x7f2da2717458: clientmctx
+24-Oct-2014 08:08:49.646 client @0x7f2d94164f10: create
+24-Oct-2014 08:08:49.646 socket 0x7f2da2680700: created
+24-Oct-2014 08:08:49.646 socket 0x7f2da2680700 127.0.0.1#53: bound
+24-Oct-2014 08:08:49.646 clientmgr @0x7f2da2717458: createclients
+24-Oct-2014 08:08:49.646 clientmgr @0x7f2da2717458: get client
+24-Oct-2014 08:08:49.646 clientmgr @0x7f2da2717458: create new
+24-Oct-2014 08:08:49.646 clientmgr @0x7f2da2717458: clientmctx
+24-Oct-2014 08:08:49.646 client @0x7f2d941732c0: create
+24-Oct-2014 08:08:49.646 listening on IPv4 interface eth0, 172.17.0.9#53
+24-Oct-2014 08:08:49.647 clientmgr @0x7f2da27178a0: create
+24-Oct-2014 08:08:49.647 socket 0x7f2da2680950: created
+24-Oct-2014 08:08:49.647 socket 0x7f2da2680950 172.17.0.9#53: bound
+24-Oct-2014 08:08:49.647 dispatchmgr 0x7f2da26ec310: dns_dispatch_createudp: Created UDP dispatch for 172.17.0.9#53 with socket fd 520
+
+24-Oct-2014 08:08:49.647 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940e45e0
+24-Oct-2014 08:08:49.647 dispatch 0x7f2d940e45e0: created task 0x7f2da2681010
+24-Oct-2014 08:08:49.647 dispatch 0x7f2d940e45e0: created socket 0x7f2da2680950
+24-Oct-2014 08:08:49.647 socket 0x7f2da2680ba0: dupped
+24-Oct-2014 08:08:49.647 dispatchmgr 0x7f2da26ec310: dns_dispatch_createudp: Created UDP dispatch for 172.17.0.9#53 with socket fd 521
+
+24-Oct-2014 08:08:49.647 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940e3fc0
+24-Oct-2014 08:08:49.647 dispatch 0x7f2d940e3fc0: created task 0x7f2da26810d0
+24-Oct-2014 08:08:49.647 dispatch 0x7f2d940e3fc0: created socket 0x7f2da2680ba0
+24-Oct-2014 08:08:49.647 socket 0x7f2da2682010: dupped
+24-Oct-2014 08:08:49.647 dispatchmgr 0x7f2da26ec310: dns_dispatch_createudp: Created UDP dispatch for 172.17.0.9#53 with socket fd 522
+
+24-Oct-2014 08:08:49.647 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940e39a0
+24-Oct-2014 08:08:49.647 dispatch 0x7f2d940e39a0: created task 0x7f2da2681190
+24-Oct-2014 08:08:49.647 dispatch 0x7f2d940e39a0: created socket 0x7f2da2682010
+24-Oct-2014 08:08:49.647 socket 0x7f2da2682260: dupped
+24-Oct-2014 08:08:49.647 dispatchmgr 0x7f2da26ec310: dns_dispatch_createudp: Created UDP dispatch for 172.17.0.9#53 with socket fd 523
+
+24-Oct-2014 08:08:49.647 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940e3380
+24-Oct-2014 08:08:49.647 dispatch 0x7f2d940e3380: created task 0x7f2da2681250
+24-Oct-2014 08:08:49.647 dispatch 0x7f2d940e3380: created socket 0x7f2da2682260
+24-Oct-2014 08:08:49.647 clientmgr @0x7f2da27178a0: createclients
+24-Oct-2014 08:08:49.647 clientmgr @0x7f2da27178a0: get client
+24-Oct-2014 08:08:49.647 clientmgr @0x7f2da27178a0: create new
+24-Oct-2014 08:08:49.647 clientmgr @0x7f2da27178a0: clientmctx
+24-Oct-2014 08:08:49.647 client @0x7f2d94181bb0: create
+24-Oct-2014 08:08:49.647 clientmgr @0x7f2da27178a0: get client
+24-Oct-2014 08:08:49.647 clientmgr @0x7f2da27178a0: create new
+24-Oct-2014 08:08:49.647 clientmgr @0x7f2da27178a0: clientmctx
+24-Oct-2014 08:08:49.647 client @0x7f2d9418ff60: create
+24-Oct-2014 08:08:49.647 clientmgr @0x7f2da27178a0: get client
+24-Oct-2014 08:08:49.648 clientmgr @0x7f2da27178a0: create new
+24-Oct-2014 08:08:49.648 clientmgr @0x7f2da27178a0: clientmctx
+24-Oct-2014 08:08:49.648 client @0x7f2d9419e310: create
+24-Oct-2014 08:08:49.648 clientmgr @0x7f2da27178a0: get client
+24-Oct-2014 08:08:49.648 clientmgr @0x7f2da27178a0: create new
+24-Oct-2014 08:08:49.648 clientmgr @0x7f2da27178a0: clientmctx
+24-Oct-2014 08:08:49.648 client @0x7f2d941ac6c0: create
+24-Oct-2014 08:08:49.648 socket 0x7f2da26824b0: created
+24-Oct-2014 08:08:49.648 socket 0x7f2da26824b0 172.17.0.9#53: bound
+24-Oct-2014 08:08:49.648 clientmgr @0x7f2da27178a0: createclients
+24-Oct-2014 08:08:49.648 clientmgr @0x7f2da27178a0: get client
+24-Oct-2014 08:08:49.648 clientmgr @0x7f2da27178a0: create new
+24-Oct-2014 08:08:49.648 clientmgr @0x7f2da27178a0: clientmctx
+24-Oct-2014 08:08:49.648 client @0x7f2d941baa70: create
+24-Oct-2014 08:08:49.649 generating session key for dynamic DNS
+24-Oct-2014 08:08:49.649 sizing zone task pool based on 5 zones
+24-Oct-2014 08:08:49.649 decrement_reference: delete from rbt: 0x7f2da26f4ed8 .
+24-Oct-2014 08:08:49.649 zone_settimer: zone localhost/IN: enter
+24-Oct-2014 08:08:49.650 zone_settimer: zone localhost/IN: settimer inactive
+24-Oct-2014 08:08:49.650 zone_settimer: zone 127.in-addr.arpa/IN: enter
+24-Oct-2014 08:08:49.650 zone_settimer: zone 127.in-addr.arpa/IN: settimer inactive
+24-Oct-2014 08:08:49.650 zone_settimer: zone 0.in-addr.arpa/IN: enter
+24-Oct-2014 08:08:49.650 zone_settimer: zone 0.in-addr.arpa/IN: settimer inactive
+24-Oct-2014 08:08:49.650 zone_settimer: zone 255.in-addr.arpa/IN: enter
+24-Oct-2014 08:08:49.650 zone_settimer: zone 255.in-addr.arpa/IN: settimer inactive
+24-Oct-2014 08:08:49.650 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940e2d60
+24-Oct-2014 08:08:49.650 dispatch 0x7f2d940e2d60: created task 0x7f2da2681790
+24-Oct-2014 08:08:49.650 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940e2740
+24-Oct-2014 08:08:49.650 dispatch 0x7f2d940e2740: created task 0x7f2da268b850
+24-Oct-2014 08:08:49.650 res 0x7f2da268f010: create
+24-Oct-2014 08:08:49.651 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940e2120
+24-Oct-2014 08:08:49.651 dispatch 0x7f2d940e2120: created task 0x7f2da2691190
+24-Oct-2014 08:08:49.651 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940e1b00
+24-Oct-2014 08:08:49.651 dispatch 0x7f2d940e1b00: created task 0x7f2da2694250
+24-Oct-2014 08:08:49.651 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940e14e0
+24-Oct-2014 08:08:49.651 dispatch 0x7f2d940e14e0: created task 0x7f2da2697310
+24-Oct-2014 08:08:49.651 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940e0ec0
+24-Oct-2014 08:08:49.651 dispatch 0x7f2d940e0ec0: created task 0x7f2da269b3d0
+24-Oct-2014 08:08:49.651 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940e08a0
+24-Oct-2014 08:08:49.651 dispatch 0x7f2d940e08a0: created task 0x7f2da269e490
+24-Oct-2014 08:08:49.651 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940e0280
+24-Oct-2014 08:08:49.651 dispatch 0x7f2d940e0280: created task 0x7f2da26a1550
+24-Oct-2014 08:08:49.651 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940dfc60
+24-Oct-2014 08:08:49.651 dispatch 0x7f2d940dfc60: created task 0x7f2da26a4610
+24-Oct-2014 08:08:49.651 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940df640
+24-Oct-2014 08:08:49.651 dispatch 0x7f2d940df640: created task 0x7f2da26a76d0
+24-Oct-2014 08:08:49.651 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940df020
+24-Oct-2014 08:08:49.651 dispatch 0x7f2d940df020: created task 0x7f2da26aa790
+24-Oct-2014 08:08:49.651 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940dea00
+24-Oct-2014 08:08:49.651 dispatch 0x7f2d940dea00: created task 0x7f2da26ad850
+24-Oct-2014 08:08:49.651 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940de3e0
+24-Oct-2014 08:08:49.651 dispatch 0x7f2d940de3e0: created task 0x7f2da26b0910
+24-Oct-2014 08:08:49.652 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940dddc0
+24-Oct-2014 08:08:49.652 dispatch 0x7f2d940dddc0: created task 0x7f2d9b65b9d0
+24-Oct-2014 08:08:49.652 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940dd7a0
+24-Oct-2014 08:08:49.652 dispatch 0x7f2d940dd7a0: created task 0x7f2d9b65ea90
+24-Oct-2014 08:08:49.652 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940dd180
+24-Oct-2014 08:08:49.652 dispatch 0x7f2d940dd180: created task 0x7f2d9b661b50
+24-Oct-2014 08:08:49.652 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940dcb60
+24-Oct-2014 08:08:49.652 dispatch 0x7f2d940dcb60: created task 0x7f2d9b664c10
+24-Oct-2014 08:08:49.652 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940dc540
+24-Oct-2014 08:08:49.652 dispatch 0x7f2d940dc540: created task 0x7f2d9b667cd0
+24-Oct-2014 08:08:49.652 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940dbf20
+24-Oct-2014 08:08:49.652 dispatch 0x7f2d940dbf20: created task 0x7f2d9b66ad90
+24-Oct-2014 08:08:49.652 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940db900
+24-Oct-2014 08:08:49.652 dispatch 0x7f2d940db900: created task 0x7f2d9b66de50
+24-Oct-2014 08:08:49.652 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940db2e0
+24-Oct-2014 08:08:49.652 dispatch 0x7f2d940db2e0: created task 0x7f2d9b670f10
+24-Oct-2014 08:08:49.652 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940dacc0
+24-Oct-2014 08:08:49.652 dispatch 0x7f2d940dacc0: created task 0x7f2d9b674010
+24-Oct-2014 08:08:49.652 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940da6a0
+24-Oct-2014 08:08:49.652 dispatch 0x7f2d940da6a0: created task 0x7f2d9b6770d0
+24-Oct-2014 08:08:49.652 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940da080
+24-Oct-2014 08:08:49.652 dispatch 0x7f2d940da080: created task 0x7f2d9b67a190
+24-Oct-2014 08:08:49.652 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940d9a60
+24-Oct-2014 08:08:49.652 dispatch 0x7f2d940d9a60: created task 0x7f2d9b67d250
+24-Oct-2014 08:08:49.652 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940d9440
+24-Oct-2014 08:08:49.652 dispatch 0x7f2d940d9440: created task 0x7f2d9b681310
+24-Oct-2014 08:08:49.652 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940d8e20
+24-Oct-2014 08:08:49.652 dispatch 0x7f2d940d8e20: created task 0x7f2d9b6843d0
+24-Oct-2014 08:08:49.653 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940d8800
+24-Oct-2014 08:08:49.653 dispatch 0x7f2d940d8800: created task 0x7f2d9b687490
+24-Oct-2014 08:08:49.653 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940d81e0
+24-Oct-2014 08:08:49.653 dispatch 0x7f2d940d81e0: created task 0x7f2d9b68a550
+24-Oct-2014 08:08:49.653 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940d7bc0
+24-Oct-2014 08:08:49.653 dispatch 0x7f2d940d7bc0: created task 0x7f2d9b68d610
+24-Oct-2014 08:08:49.653 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940d75a0
+24-Oct-2014 08:08:49.653 dispatch 0x7f2d940d75a0: created task 0x7f2d9b6906d0
+24-Oct-2014 08:08:49.653 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940d6f80
+24-Oct-2014 08:08:49.653 dispatch 0x7f2d940d6f80: created task 0x7f2d9b693790
+24-Oct-2014 08:08:49.653 dns_requestmgr_create
+24-Oct-2014 08:08:49.653 dns_requestmgr_create: 0x7f2d9b697010
+24-Oct-2014 08:08:49.653 dns_requestmgr_whenshutdown
+24-Oct-2014 08:08:49.654 using built-in root key for view _default
+24-Oct-2014 08:08:49.654 set up managed keys zone for view _default, file 'managed-keys.bind'
+24-Oct-2014 08:08:49.654 automatic empty zone: 10.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.654 automatic empty zone: 16.172.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.654 automatic empty zone: 17.172.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.654 automatic empty zone: 18.172.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.654 automatic empty zone: 19.172.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.654 automatic empty zone: 20.172.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.654 automatic empty zone: 21.172.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.654 automatic empty zone: 22.172.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.654 automatic empty zone: 23.172.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.654 automatic empty zone: 24.172.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.654 automatic empty zone: 25.172.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.654 automatic empty zone: 26.172.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.654 automatic empty zone: 27.172.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.654 automatic empty zone: 28.172.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.654 automatic empty zone: 29.172.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.654 automatic empty zone: 30.172.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.654 automatic empty zone: 31.172.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.654 automatic empty zone: 168.192.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.654 automatic empty zone: 64.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.655 automatic empty zone: 65.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.655 automatic empty zone: 66.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.655 automatic empty zone: 67.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.655 automatic empty zone: 68.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.655 automatic empty zone: 69.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.655 automatic empty zone: 70.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.655 automatic empty zone: 71.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.655 automatic empty zone: 72.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.655 automatic empty zone: 73.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.655 automatic empty zone: 74.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.655 automatic empty zone: 75.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.655 automatic empty zone: 76.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.655 automatic empty zone: 77.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.655 automatic empty zone: 78.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.655 automatic empty zone: 79.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.655 automatic empty zone: 80.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.655 automatic empty zone: 81.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.655 automatic empty zone: 82.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.655 automatic empty zone: 83.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.655 automatic empty zone: 84.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.655 automatic empty zone: 85.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.655 automatic empty zone: 86.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.655 automatic empty zone: 87.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.656 automatic empty zone: 88.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.656 automatic empty zone: 89.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.656 automatic empty zone: 90.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.656 automatic empty zone: 91.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.656 automatic empty zone: 92.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.656 automatic empty zone: 93.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.656 automatic empty zone: 94.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.656 automatic empty zone: 95.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.656 automatic empty zone: 96.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.656 automatic empty zone: 97.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.656 automatic empty zone: 98.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.656 automatic empty zone: 99.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.656 automatic empty zone: 100.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.656 automatic empty zone: 101.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.656 automatic empty zone: 102.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.656 automatic empty zone: 103.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.656 automatic empty zone: 104.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.656 automatic empty zone: 105.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.656 automatic empty zone: 106.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.656 automatic empty zone: 107.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.656 automatic empty zone: 108.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.656 automatic empty zone: 109.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.656 automatic empty zone: 110.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.657 automatic empty zone: 111.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.657 automatic empty zone: 112.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.657 automatic empty zone: 113.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.657 automatic empty zone: 114.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.657 automatic empty zone: 115.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.657 automatic empty zone: 116.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.657 automatic empty zone: 117.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.657 automatic empty zone: 118.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.657 automatic empty zone: 119.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.657 automatic empty zone: 120.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.657 automatic empty zone: 121.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.657 automatic empty zone: 122.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.657 automatic empty zone: 123.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.657 automatic empty zone: 124.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.657 automatic empty zone: 125.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.657 automatic empty zone: 126.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.657 automatic empty zone: 127.100.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.657 automatic empty zone: 254.169.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.657 automatic empty zone: 2.0.192.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.657 automatic empty zone: 100.51.198.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.657 automatic empty zone: 113.0.203.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.657 automatic empty zone: 255.255.255.255.IN-ADDR.ARPA
+24-Oct-2014 08:08:49.658 automatic empty zone: 0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.IP6.ARPA
+24-Oct-2014 08:08:49.658 automatic empty zone: 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.IP6.ARPA
+24-Oct-2014 08:08:49.658 automatic empty zone: D.F.IP6.ARPA
+24-Oct-2014 08:08:49.658 automatic empty zone: 8.E.F.IP6.ARPA
+24-Oct-2014 08:08:49.658 automatic empty zone: 9.E.F.IP6.ARPA
+24-Oct-2014 08:08:49.658 automatic empty zone: A.E.F.IP6.ARPA
+24-Oct-2014 08:08:49.658 automatic empty zone: B.E.F.IP6.ARPA
+24-Oct-2014 08:08:49.658 automatic empty zone: 8.B.D.0.1.0.0.2.IP6.ARPA
+24-Oct-2014 08:08:49.658 dispatch 0x7f2d940e2d60: detach: refcount 2
+24-Oct-2014 08:08:49.658 dispatch 0x7f2d940e2740: detach: refcount 2
+24-Oct-2014 08:08:49.658 zone_settimer: zone version.bind/CH: enter
+24-Oct-2014 08:08:49.658 zone_settimer: zone version.bind/CH: settimer inactive
+24-Oct-2014 08:08:49.658 zone_settimer: zone hostname.bind/CH: enter
+24-Oct-2014 08:08:49.658 zone_settimer: zone hostname.bind/CH: settimer inactive
+24-Oct-2014 08:08:49.658 zone_settimer: zone authors.bind/CH: enter
+24-Oct-2014 08:08:49.658 zone_settimer: zone authors.bind/CH: settimer inactive
+24-Oct-2014 08:08:49.658 zone_settimer: zone id.server/CH: enter
+24-Oct-2014 08:08:49.658 zone_settimer: zone id.server/CH: settimer inactive
+24-Oct-2014 08:08:49.659 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940d6960
+24-Oct-2014 08:08:49.659 dispatch 0x7f2d940d6960: created task 0x7f2d9b696a90
+24-Oct-2014 08:08:49.659 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940d6340
+24-Oct-2014 08:08:49.659 dispatch 0x7f2d940d6340: created task 0x7f2d9b5e1b50
+24-Oct-2014 08:08:49.659 res 0x7f2da268f190: create
+24-Oct-2014 08:08:49.659 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940d5d20
+24-Oct-2014 08:08:49.659 dispatch 0x7f2d940d5d20: created task 0x7f2d9b5e6490
+24-Oct-2014 08:08:49.659 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940d5700
+24-Oct-2014 08:08:49.659 dispatch 0x7f2d940d5700: created task 0x7f2d9b5e9550
+24-Oct-2014 08:08:49.659 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940d50e0
+24-Oct-2014 08:08:49.659 dispatch 0x7f2d940d50e0: created task 0x7f2d9b5ec610
+24-Oct-2014 08:08:49.659 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940d4ac0
+24-Oct-2014 08:08:49.659 dispatch 0x7f2d940d4ac0: created task 0x7f2d9b5ef6d0
+24-Oct-2014 08:08:49.659 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940d44a0
+24-Oct-2014 08:08:49.659 dispatch 0x7f2d940d44a0: created task 0x7f2d9b5f2790
+24-Oct-2014 08:08:49.659 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940d3e80
+24-Oct-2014 08:08:49.659 dispatch 0x7f2d940d3e80: created task 0x7f2d9b5f5850
+24-Oct-2014 08:08:49.659 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940d3860
+24-Oct-2014 08:08:49.659 dispatch 0x7f2d940d3860: created task 0x7f2d9b5f8910
+24-Oct-2014 08:08:49.660 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940d3240
+24-Oct-2014 08:08:49.660 dispatch 0x7f2d940d3240: created task 0x7f2d9b5fc9d0
+24-Oct-2014 08:08:49.660 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940d2c20
+24-Oct-2014 08:08:49.660 dispatch 0x7f2d940d2c20: created task 0x7f2d9b5ffa90
+24-Oct-2014 08:08:49.660 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940d2600
+24-Oct-2014 08:08:49.660 dispatch 0x7f2d940d2600: created task 0x7f2d9b602b50
+24-Oct-2014 08:08:49.660 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940d1fe0
+24-Oct-2014 08:08:49.660 dispatch 0x7f2d940d1fe0: created task 0x7f2d9b605c10
+24-Oct-2014 08:08:49.660 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940d19c0
+24-Oct-2014 08:08:49.660 dispatch 0x7f2d940d19c0: created task 0x7f2d9b608cd0
+24-Oct-2014 08:08:49.660 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940d13a0
+24-Oct-2014 08:08:49.660 dispatch 0x7f2d940d13a0: created task 0x7f2d9b60bd90
+24-Oct-2014 08:08:49.660 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940d0d80
+24-Oct-2014 08:08:49.660 dispatch 0x7f2d940d0d80: created task 0x7f2d9b60ee50
+24-Oct-2014 08:08:49.660 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940d0760
+24-Oct-2014 08:08:49.660 dispatch 0x7f2d940d0760: created task 0x7f2d9b611f10
+24-Oct-2014 08:08:49.660 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940d0140
+24-Oct-2014 08:08:49.660 dispatch 0x7f2d940d0140: created task 0x7f2d9b615010
+24-Oct-2014 08:08:49.660 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940cfb20
+24-Oct-2014 08:08:49.660 dispatch 0x7f2d940cfb20: created task 0x7f2d9b5150d0
+24-Oct-2014 08:08:49.660 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940cf500
+24-Oct-2014 08:08:49.660 dispatch 0x7f2d940cf500: created task 0x7f2d9b518190
+24-Oct-2014 08:08:49.660 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940ceee0
+24-Oct-2014 08:08:49.660 dispatch 0x7f2d940ceee0: created task 0x7f2d9b51b250
+24-Oct-2014 08:08:49.660 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940ce8c0
+24-Oct-2014 08:08:49.660 dispatch 0x7f2d940ce8c0: created task 0x7f2d9b51e310
+24-Oct-2014 08:08:49.660 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940ce2a0
+24-Oct-2014 08:08:49.660 dispatch 0x7f2d940ce2a0: created task 0x7f2d9b5213d0
+24-Oct-2014 08:08:49.660 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940cdc80
+24-Oct-2014 08:08:49.660 dispatch 0x7f2d940cdc80: created task 0x7f2d9b524490
+24-Oct-2014 08:08:49.660 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940cd660
+24-Oct-2014 08:08:49.660 dispatch 0x7f2d940cd660: created task 0x7f2d9b527550
+24-Oct-2014 08:08:49.660 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940cd040
+24-Oct-2014 08:08:49.660 dispatch 0x7f2d940cd040: created task 0x7f2d9b52a610
+24-Oct-2014 08:08:49.660 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940cca20
+24-Oct-2014 08:08:49.660 dispatch 0x7f2d940cca20: created task 0x7f2d9b52d6d0
+24-Oct-2014 08:08:49.660 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940cc400
+24-Oct-2014 08:08:49.660 dispatch 0x7f2d940cc400: created task 0x7f2d9b530790
+24-Oct-2014 08:08:49.660 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940cbde0
+24-Oct-2014 08:08:49.660 dispatch 0x7f2d940cbde0: created task 0x7f2d9b534850
+24-Oct-2014 08:08:49.661 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940cb7c0
+24-Oct-2014 08:08:49.661 dispatch 0x7f2d940cb7c0: created task 0x7f2d9b537910
+24-Oct-2014 08:08:49.661 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940cb1a0
+24-Oct-2014 08:08:49.661 dispatch 0x7f2d940cb1a0: created task 0x7f2d9b53a9d0
+24-Oct-2014 08:08:49.661 dispatchmgr 0x7f2da26ec310: created UDP dispatcher 0x7f2d940cab80
+24-Oct-2014 08:08:49.661 dispatch 0x7f2d940cab80: created task 0x7f2d9b53da90
+24-Oct-2014 08:08:49.661 dns_requestmgr_create
+24-Oct-2014 08:08:49.661 dns_requestmgr_create: 0x7f2d9b6971c8
+24-Oct-2014 08:08:49.661 dns_requestmgr_whenshutdown
+24-Oct-2014 08:08:49.661 dispatch 0x7f2d940d6960: detach: refcount 2
+24-Oct-2014 08:08:49.661 dispatch 0x7f2d940d6340: detach: refcount 2
+24-Oct-2014 08:08:49.661 open: /etc/bind/rndc.key: permission denied
+24-Oct-2014 08:08:49.661 couldn't add command channel 127.0.0.1#953: permission denied
+24-Oct-2014 08:08:49.661 open: /etc/bind/rndc.key: permission denied
+24-Oct-2014 08:08:49.661 couldn't add command channel ::1#953: permission denied
+24-Oct-2014 08:11:07.779 starting BIND 9.9.5-3-Ubuntu -f -d 999
+24-Oct-2014 08:11:07.779 built with '--prefix=/usr' '--mandir=/usr/share/man' '--infodir=/usr/share/info' '--sysconfdir=/etc/bind' '--localstatedir=/var' '--enable-threads' '--enable-largefile' '--with-libtool' '--enable-shared' '--enable-static' '--with-openssl=/usr' '--with-gssapi=/usr' '--with-gnu-ld' '--with-geoip=/usr' '--with-atf=no' '--enable-ipv6' '--enable-rrl' '--enable-filter-aaaa' 'CFLAGS=-fno-strict-aliasing -DDIG_SIGCHASE -O2'
+24-Oct-2014 08:11:07.779 ----------------------------------------------------
+24-Oct-2014 08:11:07.779 BIND 9 is maintained by Internet Systems Consortium,
+24-Oct-2014 08:11:07.779 Inc. (ISC), a non-profit 501(c)(3) public-benefit 
+24-Oct-2014 08:11:07.779 corporation.  Support and training for BIND 9 are 
+24-Oct-2014 08:11:07.779 available at https://www.isc.org/support
+24-Oct-2014 08:11:07.779 ----------------------------------------------------
+24-Oct-2014 08:11:07.779 found 4 CPUs, using 4 worker threads
+24-Oct-2014 08:11:07.779 using 4 UDP listeners per interface
+24-Oct-2014 08:11:07.779 using up to 4096 sockets
+24-Oct-2014 08:11:07.780 Registering DLZ_dlopen driver
+24-Oct-2014 08:11:07.780 Registering SDLZ driver 'dlopen'
+24-Oct-2014 08:11:07.780 Registering DLZ driver 'dlopen'
+24-Oct-2014 08:11:07.780 decrement_reference: delete from rbt: 0x7f194ead9068 .
+24-Oct-2014 08:11:07.781 loading configuration from '/etc/bind/named.conf'
+24-Oct-2014 08:11:07.782 reading built-in trusted keys from file '/etc/bind/bind.keys'
+24-Oct-2014 08:11:07.782 set maximum stack size to 18446744073709551615: success
+24-Oct-2014 08:11:07.782 set maximum data size to 18446744073709551615: success
+24-Oct-2014 08:11:07.782 set maximum core size to 18446744073709551615: success
+24-Oct-2014 08:11:07.782 set maximum open files to 18446744073709551615: success
+24-Oct-2014 08:11:07.782 using default UDP/IPv4 port range: [1024, 65535]
+24-Oct-2014 08:11:07.782 using default UDP/IPv6 port range: [1024, 65535]
+24-Oct-2014 08:11:07.783 listening on IPv6 interfaces, port 53
+24-Oct-2014 08:11:07.783 clientmgr @0x7f194eafc010: create
+24-Oct-2014 08:11:07.783 socket 0x7f194ea63010: created
+24-Oct-2014 08:11:07.783 socket 0x7f194ea63010 ::#53: bound
+24-Oct-2014 08:11:07.783 dispatchmgr 0x7f194ead1310: dns_dispatch_createudp: Created UDP dispatch for ::#53 with socket fd 512
+
+24-Oct-2014 08:11:07.783 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400e76e0
+24-Oct-2014 08:11:07.783 dispatch 0x7f19400e76e0: created task 0x7f194eadf250
+24-Oct-2014 08:11:07.783 dispatch 0x7f19400e76e0: created socket 0x7f194ea63010
+24-Oct-2014 08:11:07.783 socket 0x7f194ea63260: dupped
+24-Oct-2014 08:11:07.783 dispatchmgr 0x7f194ead1310: dns_dispatch_createudp: Created UDP dispatch for ::#53 with socket fd 513
+
+24-Oct-2014 08:11:07.783 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400e70c0
+24-Oct-2014 08:11:07.783 dispatch 0x7f19400e70c0: created task 0x7f194eadf310
+24-Oct-2014 08:11:07.783 dispatch 0x7f19400e70c0: created socket 0x7f194ea63260
+24-Oct-2014 08:11:07.783 socket 0x7f194ea634b0: dupped
+24-Oct-2014 08:11:07.783 dispatchmgr 0x7f194ead1310: dns_dispatch_createudp: Created UDP dispatch for ::#53 with socket fd 514
+
+24-Oct-2014 08:11:07.783 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400e6aa0
+24-Oct-2014 08:11:07.783 dispatch 0x7f19400e6aa0: created task 0x7f194eadf3d0
+24-Oct-2014 08:11:07.783 dispatch 0x7f19400e6aa0: created socket 0x7f194ea634b0
+24-Oct-2014 08:11:07.783 socket 0x7f194ea63700: dupped
+24-Oct-2014 08:11:07.783 dispatchmgr 0x7f194ead1310: dns_dispatch_createudp: Created UDP dispatch for ::#53 with socket fd 515
+
+24-Oct-2014 08:11:07.783 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400e6480
+24-Oct-2014 08:11:07.783 dispatch 0x7f19400e6480: created task 0x7f194eadf490
+24-Oct-2014 08:11:07.783 dispatch 0x7f19400e6480: created socket 0x7f194ea63700
+24-Oct-2014 08:11:07.783 clientmgr @0x7f194eafc010: createclients
+24-Oct-2014 08:11:07.783 clientmgr @0x7f194eafc010: get client
+24-Oct-2014 08:11:07.783 clientmgr @0x7f194eafc010: create new
+24-Oct-2014 08:11:07.783 clientmgr @0x7f194eafc010: clientmctx
+24-Oct-2014 08:11:07.783 client @0x7f19400f2920: create
+24-Oct-2014 08:11:07.783 clientmgr @0x7f194eafc010: get client
+24-Oct-2014 08:11:07.783 clientmgr @0x7f194eafc010: create new
+24-Oct-2014 08:11:07.784 clientmgr @0x7f194eafc010: clientmctx
+24-Oct-2014 08:11:07.784 client @0x7f1940100b60: create
+24-Oct-2014 08:11:07.784 clientmgr @0x7f194eafc010: get client
+24-Oct-2014 08:11:07.784 clientmgr @0x7f194eafc010: create new
+24-Oct-2014 08:11:07.784 clientmgr @0x7f194eafc010: clientmctx
+24-Oct-2014 08:11:07.784 client @0x7f194010eda0: create
+24-Oct-2014 08:11:07.784 clientmgr @0x7f194eafc010: get client
+24-Oct-2014 08:11:07.784 clientmgr @0x7f194eafc010: create new
+24-Oct-2014 08:11:07.784 clientmgr @0x7f194eafc010: clientmctx
+24-Oct-2014 08:11:07.784 client @0x7f194011cfe0: create
+24-Oct-2014 08:11:07.784 socket 0x7f194ea63950: created
+24-Oct-2014 08:11:07.784 socket 0x7f194ea63950 ::#53: bound
+24-Oct-2014 08:11:07.784 clientmgr @0x7f194eafc010: createclients
+24-Oct-2014 08:11:07.784 clientmgr @0x7f194eafc010: get client
+24-Oct-2014 08:11:07.784 clientmgr @0x7f194eafc010: create new
+24-Oct-2014 08:11:07.784 clientmgr @0x7f194eafc010: clientmctx
+24-Oct-2014 08:11:07.784 client @0x7f194012b390: create
+24-Oct-2014 08:11:07.784 listening on IPv4 interface lo, 127.0.0.1#53
+24-Oct-2014 08:11:07.784 clientmgr @0x7f194eafc458: create
+24-Oct-2014 08:11:07.784 socket 0x7f194ea63ba0: created
+24-Oct-2014 08:11:07.784 socket 0x7f194ea63ba0 127.0.0.1#53: bound
+24-Oct-2014 08:11:07.784 dispatchmgr 0x7f194ead1310: dns_dispatch_createudp: Created UDP dispatch for 127.0.0.1#53 with socket fd 516
+
+24-Oct-2014 08:11:07.784 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400e5e60
+24-Oct-2014 08:11:07.784 dispatch 0x7f19400e5e60: created task 0x7f194eadf910
+24-Oct-2014 08:11:07.784 dispatch 0x7f19400e5e60: created socket 0x7f194ea63ba0
+24-Oct-2014 08:11:07.784 socket 0x7f194ea65010: dupped
+24-Oct-2014 08:11:07.784 dispatchmgr 0x7f194ead1310: dns_dispatch_createudp: Created UDP dispatch for 127.0.0.1#53 with socket fd 517
+
+24-Oct-2014 08:11:07.784 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400e5840
+24-Oct-2014 08:11:07.784 dispatch 0x7f19400e5840: created task 0x7f194eadf9d0
+24-Oct-2014 08:11:07.784 dispatch 0x7f19400e5840: created socket 0x7f194ea65010
+24-Oct-2014 08:11:07.784 socket 0x7f194ea65260: dupped
+24-Oct-2014 08:11:07.784 dispatchmgr 0x7f194ead1310: dns_dispatch_createudp: Created UDP dispatch for 127.0.0.1#53 with socket fd 518
+
+24-Oct-2014 08:11:07.784 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400e5220
+24-Oct-2014 08:11:07.784 dispatch 0x7f19400e5220: created task 0x7f194eadfa90
+24-Oct-2014 08:11:07.784 dispatch 0x7f19400e5220: created socket 0x7f194ea65260
+24-Oct-2014 08:11:07.785 socket 0x7f194ea654b0: dupped
+24-Oct-2014 08:11:07.785 dispatchmgr 0x7f194ead1310: dns_dispatch_createudp: Created UDP dispatch for 127.0.0.1#53 with socket fd 519
+
+24-Oct-2014 08:11:07.785 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400e4c00
+24-Oct-2014 08:11:07.785 dispatch 0x7f19400e4c00: created task 0x7f194eadfb50
+24-Oct-2014 08:11:07.785 dispatch 0x7f19400e4c00: created socket 0x7f194ea654b0
+24-Oct-2014 08:11:07.785 clientmgr @0x7f194eafc458: createclients
+24-Oct-2014 08:11:07.785 clientmgr @0x7f194eafc458: get client
+24-Oct-2014 08:11:07.785 clientmgr @0x7f194eafc458: create new
+24-Oct-2014 08:11:07.785 clientmgr @0x7f194eafc458: clientmctx
+24-Oct-2014 08:11:07.785 client @0x7f194013a6e0: create
+24-Oct-2014 08:11:07.785 clientmgr @0x7f194eafc458: get client
+24-Oct-2014 08:11:07.785 clientmgr @0x7f194eafc458: create new
+24-Oct-2014 08:11:07.785 clientmgr @0x7f194eafc458: clientmctx
+24-Oct-2014 08:11:07.785 client @0x7f1940148920: create
+24-Oct-2014 08:11:07.785 clientmgr @0x7f194eafc458: get client
+24-Oct-2014 08:11:07.785 clientmgr @0x7f194eafc458: create new
+24-Oct-2014 08:11:07.785 clientmgr @0x7f194eafc458: clientmctx
+24-Oct-2014 08:11:07.785 client @0x7f1940156b60: create
+24-Oct-2014 08:11:07.785 clientmgr @0x7f194eafc458: get client
+24-Oct-2014 08:11:07.785 clientmgr @0x7f194eafc458: create new
+24-Oct-2014 08:11:07.785 clientmgr @0x7f194eafc458: clientmctx
+24-Oct-2014 08:11:07.785 client @0x7f1940164f10: create
+24-Oct-2014 08:11:07.785 socket 0x7f194ea65700: created
+24-Oct-2014 08:11:07.785 socket 0x7f194ea65700 127.0.0.1#53: bound
+24-Oct-2014 08:11:07.785 clientmgr @0x7f194eafc458: createclients
+24-Oct-2014 08:11:07.785 clientmgr @0x7f194eafc458: get client
+24-Oct-2014 08:11:07.785 clientmgr @0x7f194eafc458: create new
+24-Oct-2014 08:11:07.785 clientmgr @0x7f194eafc458: clientmctx
+24-Oct-2014 08:11:07.785 client @0x7f19401732c0: create
+24-Oct-2014 08:11:07.785 listening on IPv4 interface eth0, 172.17.0.9#53
+24-Oct-2014 08:11:07.785 clientmgr @0x7f194eafc8a0: create
+24-Oct-2014 08:11:07.785 socket 0x7f194ea65950: created
+24-Oct-2014 08:11:07.786 socket 0x7f194ea65950 172.17.0.9#53: bound
+24-Oct-2014 08:11:07.786 dispatchmgr 0x7f194ead1310: dns_dispatch_createudp: Created UDP dispatch for 172.17.0.9#53 with socket fd 520
+
+24-Oct-2014 08:11:07.786 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400e45e0
+24-Oct-2014 08:11:07.786 dispatch 0x7f19400e45e0: created task 0x7f194ea66010
+24-Oct-2014 08:11:07.786 dispatch 0x7f19400e45e0: created socket 0x7f194ea65950
+24-Oct-2014 08:11:07.786 socket 0x7f194ea65ba0: dupped
+24-Oct-2014 08:11:07.786 dispatchmgr 0x7f194ead1310: dns_dispatch_createudp: Created UDP dispatch for 172.17.0.9#53 with socket fd 521
+
+24-Oct-2014 08:11:07.786 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400e3fc0
+24-Oct-2014 08:11:07.786 dispatch 0x7f19400e3fc0: created task 0x7f194ea660d0
+24-Oct-2014 08:11:07.786 dispatch 0x7f19400e3fc0: created socket 0x7f194ea65ba0
+24-Oct-2014 08:11:07.786 socket 0x7f194ea67010: dupped
+24-Oct-2014 08:11:07.786 dispatchmgr 0x7f194ead1310: dns_dispatch_createudp: Created UDP dispatch for 172.17.0.9#53 with socket fd 522
+
+24-Oct-2014 08:11:07.786 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400e39a0
+24-Oct-2014 08:11:07.786 dispatch 0x7f19400e39a0: created task 0x7f194ea66190
+24-Oct-2014 08:11:07.786 dispatch 0x7f19400e39a0: created socket 0x7f194ea67010
+24-Oct-2014 08:11:07.786 socket 0x7f194ea67260: dupped
+24-Oct-2014 08:11:07.786 dispatchmgr 0x7f194ead1310: dns_dispatch_createudp: Created UDP dispatch for 172.17.0.9#53 with socket fd 523
+
+24-Oct-2014 08:11:07.786 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400e3380
+24-Oct-2014 08:11:07.786 dispatch 0x7f19400e3380: created task 0x7f194ea66250
+24-Oct-2014 08:11:07.786 dispatch 0x7f19400e3380: created socket 0x7f194ea67260
+24-Oct-2014 08:11:07.786 clientmgr @0x7f194eafc8a0: createclients
+24-Oct-2014 08:11:07.786 clientmgr @0x7f194eafc8a0: get client
+24-Oct-2014 08:11:07.786 clientmgr @0x7f194eafc8a0: create new
+24-Oct-2014 08:11:07.786 clientmgr @0x7f194eafc8a0: clientmctx
+24-Oct-2014 08:11:07.786 client @0x7f1940181bb0: create
+24-Oct-2014 08:11:07.786 clientmgr @0x7f194eafc8a0: get client
+24-Oct-2014 08:11:07.786 clientmgr @0x7f194eafc8a0: create new
+24-Oct-2014 08:11:07.786 clientmgr @0x7f194eafc8a0: clientmctx
+24-Oct-2014 08:11:07.786 client @0x7f194018ff60: create
+24-Oct-2014 08:11:07.786 clientmgr @0x7f194eafc8a0: get client
+24-Oct-2014 08:11:07.786 clientmgr @0x7f194eafc8a0: create new
+24-Oct-2014 08:11:07.786 clientmgr @0x7f194eafc8a0: clientmctx
+24-Oct-2014 08:11:07.786 client @0x7f194019e310: create
+24-Oct-2014 08:11:07.786 clientmgr @0x7f194eafc8a0: get client
+24-Oct-2014 08:11:07.786 clientmgr @0x7f194eafc8a0: create new
+24-Oct-2014 08:11:07.786 clientmgr @0x7f194eafc8a0: clientmctx
+24-Oct-2014 08:11:07.786 client @0x7f19401ac6c0: create
+24-Oct-2014 08:11:07.786 socket 0x7f194ea674b0: created
+24-Oct-2014 08:11:07.786 socket 0x7f194ea674b0 172.17.0.9#53: bound
+24-Oct-2014 08:11:07.786 clientmgr @0x7f194eafc8a0: createclients
+24-Oct-2014 08:11:07.786 clientmgr @0x7f194eafc8a0: get client
+24-Oct-2014 08:11:07.786 clientmgr @0x7f194eafc8a0: create new
+24-Oct-2014 08:11:07.786 clientmgr @0x7f194eafc8a0: clientmctx
+24-Oct-2014 08:11:07.787 client @0x7f19401baa70: create
+24-Oct-2014 08:11:07.787 generating session key for dynamic DNS
+24-Oct-2014 08:11:07.787 sizing zone task pool based on 6 zones
+24-Oct-2014 08:11:07.787 decrement_reference: delete from rbt: 0x7f194ead9ed8 .
+24-Oct-2014 08:11:07.787 zone_settimer: zone localhost/IN: enter
+24-Oct-2014 08:11:07.787 zone_settimer: zone localhost/IN: settimer inactive
+24-Oct-2014 08:11:07.788 zone_settimer: zone 127.in-addr.arpa/IN: enter
+24-Oct-2014 08:11:07.788 zone_settimer: zone 127.in-addr.arpa/IN: settimer inactive
+24-Oct-2014 08:11:07.788 zone_settimer: zone 0.in-addr.arpa/IN: enter
+24-Oct-2014 08:11:07.788 zone_settimer: zone 0.in-addr.arpa/IN: settimer inactive
+24-Oct-2014 08:11:07.788 zone_settimer: zone 255.in-addr.arpa/IN: enter
+24-Oct-2014 08:11:07.788 zone_settimer: zone 255.in-addr.arpa/IN: settimer inactive
+24-Oct-2014 08:11:07.788 zone_settimer: zone cuddletech/IN: enter
+24-Oct-2014 08:11:07.788 zone_settimer: zone cuddletech/IN: settimer inactive
+24-Oct-2014 08:11:07.788 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400e2d60
+24-Oct-2014 08:11:07.788 dispatch 0x7f19400e2d60: created task 0x7f194ea66790
+24-Oct-2014 08:11:07.788 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400e2740
+24-Oct-2014 08:11:07.788 dispatch 0x7f19400e2740: created task 0x7f194ea71850
+24-Oct-2014 08:11:07.788 res 0x7f194ea75010: create
+24-Oct-2014 08:11:07.789 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400e2120
+24-Oct-2014 08:11:07.789 dispatch 0x7f19400e2120: created task 0x7f194ea77190
+24-Oct-2014 08:11:07.789 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400e1b00
+24-Oct-2014 08:11:07.789 dispatch 0x7f19400e1b00: created task 0x7f194ea7a250
+24-Oct-2014 08:11:07.789 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400e14e0
+24-Oct-2014 08:11:07.789 dispatch 0x7f19400e14e0: created task 0x7f194ea7d310
+24-Oct-2014 08:11:07.789 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400e0ec0
+24-Oct-2014 08:11:07.789 dispatch 0x7f19400e0ec0: created task 0x7f194ea813d0
+24-Oct-2014 08:11:07.789 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400e08a0
+24-Oct-2014 08:11:07.789 dispatch 0x7f19400e08a0: created task 0x7f194ea84490
+24-Oct-2014 08:11:07.789 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400e0280
+24-Oct-2014 08:11:07.789 dispatch 0x7f19400e0280: created task 0x7f194ea87550
+24-Oct-2014 08:11:07.789 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400dfc60
+24-Oct-2014 08:11:07.789 dispatch 0x7f19400dfc60: created task 0x7f194ea8a610
+24-Oct-2014 08:11:07.789 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400df640
+24-Oct-2014 08:11:07.789 dispatch 0x7f19400df640: created task 0x7f194ea8d6d0
+24-Oct-2014 08:11:07.789 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400df020
+24-Oct-2014 08:11:07.789 dispatch 0x7f19400df020: created task 0x7f194ea90790
+24-Oct-2014 08:11:07.789 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400dea00
+24-Oct-2014 08:11:07.789 dispatch 0x7f19400dea00: created task 0x7f194ea93850
+24-Oct-2014 08:11:07.789 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400de3e0
+24-Oct-2014 08:11:07.789 dispatch 0x7f19400de3e0: created task 0x7f194ea96910
+24-Oct-2014 08:11:07.789 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400dddc0
+24-Oct-2014 08:11:07.789 dispatch 0x7f19400dddc0: created task 0x7f1947a419d0
+24-Oct-2014 08:11:07.789 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400dd7a0
+24-Oct-2014 08:11:07.789 dispatch 0x7f19400dd7a0: created task 0x7f1947a44a90
+24-Oct-2014 08:11:07.789 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400dd180
+24-Oct-2014 08:11:07.789 dispatch 0x7f19400dd180: created task 0x7f1947a47b50
+24-Oct-2014 08:11:07.789 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400dcb60
+24-Oct-2014 08:11:07.789 dispatch 0x7f19400dcb60: created task 0x7f1947a4ac10
+24-Oct-2014 08:11:07.789 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400dc540
+24-Oct-2014 08:11:07.789 dispatch 0x7f19400dc540: created task 0x7f1947a4dcd0
+24-Oct-2014 08:11:07.790 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400dbf20
+24-Oct-2014 08:11:07.790 dispatch 0x7f19400dbf20: created task 0x7f1947a50d90
+24-Oct-2014 08:11:07.790 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400db900
+24-Oct-2014 08:11:07.790 dispatch 0x7f19400db900: created task 0x7f1947a53e50
+24-Oct-2014 08:11:07.790 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400db2e0
+24-Oct-2014 08:11:07.790 dispatch 0x7f19400db2e0: created task 0x7f1947a56f10
+24-Oct-2014 08:11:07.790 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400dacc0
+24-Oct-2014 08:11:07.790 dispatch 0x7f19400dacc0: created task 0x7f1947a5a010
+24-Oct-2014 08:11:07.790 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400da6a0
+24-Oct-2014 08:11:07.790 dispatch 0x7f19400da6a0: created task 0x7f1947a5d0d0
+24-Oct-2014 08:11:07.790 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400da080
+24-Oct-2014 08:11:07.790 dispatch 0x7f19400da080: created task 0x7f1947a60190
+24-Oct-2014 08:11:07.790 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400d9a60
+24-Oct-2014 08:11:07.790 dispatch 0x7f19400d9a60: created task 0x7f1947a63250
+24-Oct-2014 08:11:07.790 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400d9440
+24-Oct-2014 08:11:07.790 dispatch 0x7f19400d9440: created task 0x7f1947a67310
+24-Oct-2014 08:11:07.790 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400d8e20
+24-Oct-2014 08:11:07.790 dispatch 0x7f19400d8e20: created task 0x7f1947a6a3d0
+24-Oct-2014 08:11:07.790 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400d8800
+24-Oct-2014 08:11:07.790 dispatch 0x7f19400d8800: created task 0x7f1947a6d490
+24-Oct-2014 08:11:07.790 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400d81e0
+24-Oct-2014 08:11:07.790 dispatch 0x7f19400d81e0: created task 0x7f1947a70550
+24-Oct-2014 08:11:07.790 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400d7bc0
+24-Oct-2014 08:11:07.790 dispatch 0x7f19400d7bc0: created task 0x7f1947a73610
+24-Oct-2014 08:11:07.790 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400d75a0
+24-Oct-2014 08:11:07.790 dispatch 0x7f19400d75a0: created task 0x7f1947a766d0
+24-Oct-2014 08:11:07.790 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400d6f80
+24-Oct-2014 08:11:07.790 dispatch 0x7f19400d6f80: created task 0x7f1947a79790
+24-Oct-2014 08:11:07.790 dns_requestmgr_create
+24-Oct-2014 08:11:07.790 dns_requestmgr_create: 0x7f1947a7d010
+24-Oct-2014 08:11:07.790 dns_requestmgr_whenshutdown
+24-Oct-2014 08:11:07.790 using built-in root key for view _default
+24-Oct-2014 08:11:07.791 set up managed keys zone for view _default, file 'managed-keys.bind'
+24-Oct-2014 08:11:07.791 automatic empty zone: 10.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.791 automatic empty zone: 16.172.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.791 automatic empty zone: 17.172.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.791 automatic empty zone: 18.172.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.791 automatic empty zone: 19.172.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.791 automatic empty zone: 20.172.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.791 automatic empty zone: 21.172.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.791 automatic empty zone: 22.172.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.791 automatic empty zone: 23.172.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.791 automatic empty zone: 24.172.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.791 automatic empty zone: 25.172.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.791 automatic empty zone: 26.172.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.791 automatic empty zone: 27.172.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.791 automatic empty zone: 28.172.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.791 automatic empty zone: 29.172.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.791 automatic empty zone: 30.172.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.791 automatic empty zone: 31.172.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.791 automatic empty zone: 168.192.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.791 automatic empty zone: 64.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.791 automatic empty zone: 65.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.791 automatic empty zone: 66.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.791 automatic empty zone: 67.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.791 automatic empty zone: 68.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.792 automatic empty zone: 69.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.792 automatic empty zone: 70.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.792 automatic empty zone: 71.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.792 automatic empty zone: 72.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.792 automatic empty zone: 73.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.792 automatic empty zone: 74.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.792 automatic empty zone: 75.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.792 automatic empty zone: 76.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.792 automatic empty zone: 77.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.792 automatic empty zone: 78.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.792 automatic empty zone: 79.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.792 automatic empty zone: 80.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.792 automatic empty zone: 81.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.792 automatic empty zone: 82.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.792 automatic empty zone: 83.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.792 automatic empty zone: 84.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.792 automatic empty zone: 85.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.792 automatic empty zone: 86.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.792 automatic empty zone: 87.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.792 automatic empty zone: 88.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.792 automatic empty zone: 89.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.792 automatic empty zone: 90.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.792 automatic empty zone: 91.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.792 automatic empty zone: 92.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.792 automatic empty zone: 93.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.793 automatic empty zone: 94.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.793 automatic empty zone: 95.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.793 automatic empty zone: 96.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.793 automatic empty zone: 97.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.793 automatic empty zone: 98.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.793 automatic empty zone: 99.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.793 automatic empty zone: 100.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.793 automatic empty zone: 101.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.793 automatic empty zone: 102.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.793 automatic empty zone: 103.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.793 automatic empty zone: 104.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.793 automatic empty zone: 105.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.793 automatic empty zone: 106.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.793 automatic empty zone: 107.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.793 automatic empty zone: 108.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.793 automatic empty zone: 109.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.793 automatic empty zone: 110.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.793 automatic empty zone: 111.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.793 automatic empty zone: 112.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.793 automatic empty zone: 113.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.793 automatic empty zone: 114.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.793 automatic empty zone: 115.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.793 automatic empty zone: 116.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.793 automatic empty zone: 117.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.793 automatic empty zone: 118.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.794 automatic empty zone: 119.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.794 automatic empty zone: 120.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.794 automatic empty zone: 121.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.794 automatic empty zone: 122.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.794 automatic empty zone: 123.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.794 automatic empty zone: 124.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.794 automatic empty zone: 125.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.794 automatic empty zone: 126.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.794 automatic empty zone: 127.100.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.794 automatic empty zone: 254.169.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.794 automatic empty zone: 2.0.192.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.794 automatic empty zone: 100.51.198.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.794 automatic empty zone: 113.0.203.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.794 automatic empty zone: 255.255.255.255.IN-ADDR.ARPA
+24-Oct-2014 08:11:07.794 automatic empty zone: 0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.IP6.ARPA
+24-Oct-2014 08:11:07.794 automatic empty zone: 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.IP6.ARPA
+24-Oct-2014 08:11:07.794 automatic empty zone: D.F.IP6.ARPA
+24-Oct-2014 08:11:07.794 automatic empty zone: 8.E.F.IP6.ARPA
+24-Oct-2014 08:11:07.794 automatic empty zone: 9.E.F.IP6.ARPA
+24-Oct-2014 08:11:07.794 automatic empty zone: A.E.F.IP6.ARPA
+24-Oct-2014 08:11:07.794 automatic empty zone: B.E.F.IP6.ARPA
+24-Oct-2014 08:11:07.794 automatic empty zone: 8.B.D.0.1.0.0.2.IP6.ARPA
+24-Oct-2014 08:11:07.794 dispatch 0x7f19400e2d60: detach: refcount 2
+24-Oct-2014 08:11:07.794 dispatch 0x7f19400e2740: detach: refcount 2
+24-Oct-2014 08:11:07.794 zone_settimer: zone version.bind/CH: enter
+24-Oct-2014 08:11:07.794 zone_settimer: zone version.bind/CH: settimer inactive
+24-Oct-2014 08:11:07.795 zone_settimer: zone hostname.bind/CH: enter
+24-Oct-2014 08:11:07.795 zone_settimer: zone hostname.bind/CH: settimer inactive
+24-Oct-2014 08:11:07.795 zone_settimer: zone authors.bind/CH: enter
+24-Oct-2014 08:11:07.795 zone_settimer: zone authors.bind/CH: settimer inactive
+24-Oct-2014 08:11:07.795 zone_settimer: zone id.server/CH: enter
+24-Oct-2014 08:11:07.795 zone_settimer: zone id.server/CH: settimer inactive
+24-Oct-2014 08:11:07.795 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400d6960
+24-Oct-2014 08:11:07.795 dispatch 0x7f19400d6960: created task 0x7f1947a7ca90
+24-Oct-2014 08:11:07.795 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400d6340
+24-Oct-2014 08:11:07.795 dispatch 0x7f19400d6340: created task 0x7f19479c6b50
+24-Oct-2014 08:11:07.795 res 0x7f194ea75190: create
+24-Oct-2014 08:11:07.795 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400d5d20
+24-Oct-2014 08:11:07.795 dispatch 0x7f19400d5d20: created task 0x7f19479cb490
+24-Oct-2014 08:11:07.796 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400d5700
+24-Oct-2014 08:11:07.796 dispatch 0x7f19400d5700: created task 0x7f19479ce550
+24-Oct-2014 08:11:07.796 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400d50e0
+24-Oct-2014 08:11:07.796 dispatch 0x7f19400d50e0: created task 0x7f19479d1610
+24-Oct-2014 08:11:07.796 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400d4ac0
+24-Oct-2014 08:11:07.796 dispatch 0x7f19400d4ac0: created task 0x7f19479d46d0
+24-Oct-2014 08:11:07.796 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400d44a0
+24-Oct-2014 08:11:07.796 dispatch 0x7f19400d44a0: created task 0x7f19479d7790
+24-Oct-2014 08:11:07.796 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400d3e80
+24-Oct-2014 08:11:07.796 dispatch 0x7f19400d3e80: created task 0x7f19479da850
+24-Oct-2014 08:11:07.796 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400d3860
+24-Oct-2014 08:11:07.796 dispatch 0x7f19400d3860: created task 0x7f19479dd910
+24-Oct-2014 08:11:07.796 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400d3240
+24-Oct-2014 08:11:07.796 dispatch 0x7f19400d3240: created task 0x7f19479e19d0
+24-Oct-2014 08:11:07.796 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400d2c20
+24-Oct-2014 08:11:07.796 dispatch 0x7f19400d2c20: created task 0x7f19479e4a90
+24-Oct-2014 08:11:07.796 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400d2600
+24-Oct-2014 08:11:07.796 dispatch 0x7f19400d2600: created task 0x7f19479e7b50
+24-Oct-2014 08:11:07.796 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400d1fe0
+24-Oct-2014 08:11:07.796 dispatch 0x7f19400d1fe0: created task 0x7f19479eac10
+24-Oct-2014 08:11:07.796 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400d19c0
+24-Oct-2014 08:11:07.796 dispatch 0x7f19400d19c0: created task 0x7f19479edcd0
+24-Oct-2014 08:11:07.796 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400d13a0
+24-Oct-2014 08:11:07.796 dispatch 0x7f19400d13a0: created task 0x7f19479f0d90
+24-Oct-2014 08:11:07.796 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400d0d80
+24-Oct-2014 08:11:07.796 dispatch 0x7f19400d0d80: created task 0x7f19479f3e50
+24-Oct-2014 08:11:07.796 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400d0760
+24-Oct-2014 08:11:07.796 dispatch 0x7f19400d0760: created task 0x7f19479f6f10
+24-Oct-2014 08:11:07.796 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400d0140
+24-Oct-2014 08:11:07.796 dispatch 0x7f19400d0140: created task 0x7f19479fa010
+24-Oct-2014 08:11:07.796 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400cfb20
+24-Oct-2014 08:11:07.796 dispatch 0x7f19400cfb20: created task 0x7f19478fa0d0
+24-Oct-2014 08:11:07.796 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400cf500
+24-Oct-2014 08:11:07.796 dispatch 0x7f19400cf500: created task 0x7f19478fd190
+24-Oct-2014 08:11:07.796 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400ceee0
+24-Oct-2014 08:11:07.796 dispatch 0x7f19400ceee0: created task 0x7f1947900250
+24-Oct-2014 08:11:07.796 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400ce8c0
+24-Oct-2014 08:11:07.796 dispatch 0x7f19400ce8c0: created task 0x7f1947903310
+24-Oct-2014 08:11:07.796 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400ce2a0
+24-Oct-2014 08:11:07.796 dispatch 0x7f19400ce2a0: created task 0x7f19479063d0
+24-Oct-2014 08:11:07.796 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400cdc80
+24-Oct-2014 08:11:07.796 dispatch 0x7f19400cdc80: created task 0x7f1947909490
+24-Oct-2014 08:11:07.796 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400cd660
+24-Oct-2014 08:11:07.796 dispatch 0x7f19400cd660: created task 0x7f194790c550
+24-Oct-2014 08:11:07.796 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400cd040
+24-Oct-2014 08:11:07.796 dispatch 0x7f19400cd040: created task 0x7f194790f610
+24-Oct-2014 08:11:07.796 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400cca20
+24-Oct-2014 08:11:07.797 dispatch 0x7f19400cca20: created task 0x7f19479126d0
+24-Oct-2014 08:11:07.797 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400cc400
+24-Oct-2014 08:11:07.797 dispatch 0x7f19400cc400: created task 0x7f1947915790
+24-Oct-2014 08:11:07.797 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400cbde0
+24-Oct-2014 08:11:07.797 dispatch 0x7f19400cbde0: created task 0x7f1947919850
+24-Oct-2014 08:11:07.797 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400cb7c0
+24-Oct-2014 08:11:07.797 dispatch 0x7f19400cb7c0: created task 0x7f194791c910
+24-Oct-2014 08:11:07.797 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400cb1a0
+24-Oct-2014 08:11:07.797 dispatch 0x7f19400cb1a0: created task 0x7f194791f9d0
+24-Oct-2014 08:11:07.797 dispatchmgr 0x7f194ead1310: created UDP dispatcher 0x7f19400cab80
+24-Oct-2014 08:11:07.797 dispatch 0x7f19400cab80: created task 0x7f1947922a90
+24-Oct-2014 08:11:07.797 dns_requestmgr_create
+24-Oct-2014 08:11:07.797 dns_requestmgr_create: 0x7f1947a7d1c8
+24-Oct-2014 08:11:07.797 dns_requestmgr_whenshutdown
+24-Oct-2014 08:11:07.797 dispatch 0x7f19400d6960: detach: refcount 2
+24-Oct-2014 08:11:07.797 dispatch 0x7f19400d6340: detach: refcount 2
+24-Oct-2014 08:11:07.797 open: /etc/bind/rndc.key: permission denied
+24-Oct-2014 08:11:07.797 couldn't add command channel 127.0.0.1#953: permission denied
+24-Oct-2014 08:11:07.797 open: /etc/bind/rndc.key: permission denied
+24-Oct-2014 08:11:07.797 couldn't add command channel ::1#953: permission denied

@@ -1,0 +1,31 @@
+;
+; Cuddletech Sample Zone
+;
+$TTL	604800
+@	IN	SOA	cuddletech.com. dns.cuddletech.com. (
+			      2		; Serial
+			 604800		; Refresh
+			  86400		; Retry
+			2419200		; Expire
+			 604800 )	; Negative Cache TTL
+;
+@	IN	NS	dns.cuddletech.com.
+@	IN	A	10.0.0.22
+@	IN	AAAA	::1
+
+www	CNAME 	cuddletech.com.
+ftp	CNAME 	cuddletech.com.
+wiki	CNAME 	cuddletech.com.
+
+
+dns	IN	A	10.0.0.22
+; dns2  IN      A 	1.2.3.4
+; dns3  IN 	A 	1.2.3.5
+
+; Bogus hosts just for testing
+host1	A	10.0.0.31
+host2	A	10.0.0.32
+host3	A	10.0.0.33
+host4	A	10.0.0.34
+host5	A	10.0.0.35
+host6	A	10.0.0.36
